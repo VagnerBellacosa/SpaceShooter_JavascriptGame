@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+
+    <!-- Apresentaçao -->
+    <title>Tiozao Space Shooter</title>
+    <link rel="shortcut icon" href="img/SpaceShooter.ico" type="image/x-icon">
+
+    <!-- Front-End -->
+    <link rel="stylesheet" href="style/spaceshooter.css" type="text/css" media="screen">
+
+    <!-- Back-End -->
+   <script src="js/animacao.js"></script>
+   <script src="js/teclado.js"></script>
+   <script src="js/colisor.js"></script>
+   <script src="js/fundo.js"></script>
+   <script src="js/nave.js"></script>
+   <script src="js/ovni.js"></script>
+   <script src="js/tiro.js"></script>
+   <script src="js/spritesheet.js"></script>
+   <script src="js/explosao.js"></script>
+   <script src="js/painel.js"></script>
+	
+	
+    <!-- SEO -->
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="Vagner Bellacosa">
+    <meta name="Keywords" content="Space Shooter baseado game em html css e javascript publicado no livro html game ">
+    <meta name="description" content="Exercicio de BootCamp Javascript Games Developers, baseado no design
+    original de Éderson Cássio Lacerda Ferreira , utilizando codificaçao Javascript, css e html para testar e colocar em pratica e conhecer novos comandos.
+	Inspirado no Jogo Space Shooter">
+
+ 	<!-- Redes Sociais -->
+	<meta property="og:locale" content="pt-br">
+	<meta property="og:url" content="https://vagnerbellacosa.github.io/008_ConstruindoPrimeiroJogoDeNave/">
+	<meta property="og:title" content="Jogo Space Shooter - Salve a Terra">
+	<meta property="og:site_name" content="Bellacosa's Bootcamp">
+	<meta property="og:description" content="Uma replica do Game Space Shooter utilizando HTML JavaScript CSS">
+	<meta property="og:image" content="https://vagnerbellacosa.github.io/008_ConstruindoPrimeiroJogoDeNave/img/PowRescue.png">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:width" content="800"> 
+	<meta property="og:image:height" content="600"> 
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="Vagner Bellacosa">
+	<meta property="article:section" content="Mainframe Microinfo DEV">
+	<meta property="article:tag" content="Projeto de criaçao de jogos no BootCamp Javascript Game Developer">
+	<meta property="article:published_time" content="202106">
+	
+</head>
+
+<body>
+
+    <!-- Inicializa o facebook -->      
+    <script src="js/facebookapi.js"></script>
+	  
+   <!-- Prepara o tablado -->      
+   <canvas id="canvas_animacao" width="500" height="500"></canvas>
+   
+   <a id="link_jogar" href="javascript: iniciarJogo()">Jogar</a>
+   
+   <div id="botao_compartilhar" class="fb-share-button" data-href="http://gamecursos.com.br/jogo-nave" data-type="button_count"></div>
+   
+   <a id="postar_pontuacao" 
+      href="javascript: postarPontuacao()">Compartilhar Pontua&ccedil;&atilde;o</a>
+   
+   <div>
+     <br>            
+	 <p> <img src="img/rightleftarrow.png" alt="use as setas para movimentar a nave" width=60 height=40> Setas: movimentos  </p>
+	 <p> <img src="img/spacebutton.png" alt="use as barra de espaço para atirar" width=60 height=40> Espa&ccedil;o: tiro </p>
+	 <p> <img src="img/enterbutton.png" alt="use o botao de enter para pausar/despausar" width=60 height=40> Enter: pausa </p>
+	 <br>
+   </div>
+   
+   <!-- Compartilha no facebook -->   
+   <script src="js/pontuacaoshare.js"></script>
+   
+   <!-- Biscoito do tiozao -->
+   <div class="footer">
+       <footer>
+            <p>&copy; Bellacosa Adventures 2021</p>
+       </footer>
+   </div>
+    
+
+	
+</body>
+
+</html>
