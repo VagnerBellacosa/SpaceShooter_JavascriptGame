@@ -8,6 +8,7 @@ function Animacao(context) {
    this.ultimoCiclo = 0;
    this.decorrido = 0;
 }
+
 Animacao.prototype = {
    novoSprite: function(sprite) {
       this.sprites.push(sprite);

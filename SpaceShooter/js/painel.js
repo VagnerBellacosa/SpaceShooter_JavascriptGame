@@ -4,6 +4,7 @@ function Painel(context, nave) {
    this.spritesheet = new Spritesheet(context, nave.imagem, 3, 2);
    this.pontuacao = 0;
 }
+
 Painel.prototype = {
    atualizar: function() {
       

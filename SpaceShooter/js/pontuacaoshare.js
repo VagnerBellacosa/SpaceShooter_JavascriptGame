@@ -1,41 +1,41 @@
-      // Canvas e Context
-      var canvas = document.getElementById('canvas_animacao');
-      var context = canvas.getContext('2d');
+  // Canvas e Context
 
-      // Variáveis principais
-      var imagens, animacao, teclado, colisor, nave, criadorInimigos;
-      var totalImagens = 0, carregadas = 0;
-      var musicaAcao;
-      
-      // Começa carregando as imagens e músicas
-      carregarImagens();
-      carregarMusicas();
-      
-      function carregarImagens() {
-         // Objeto contendo os nomes das imagens
-         imagens = {
-            espaco:   'fundo-espaco.png', 
-            estrelas: 'fundo-estrelas.png', 
-            nuvens:   'fundo-nuvens.png', 
-            nave:     'nave-spritesheet.png', 
-            ovni:     'ovni.png',
-            explosao: 'explosao.png'
-         };
+  var canvas = document.getElementById('canvas_animacao');
+  var context = canvas.getContext('2d');
+
+  // Variáveis principais
+  var imagens, animacao, teclado, colisor, nave, criadorInimigos;
+  var totalImagens = 0, carregadas = 0;
+  var musicaAcao;
+
+  // Começa carregando as imagens e músicas
+  carregarImagens();
+  carregarMusicas();
+
+  function carregarImagens() {
+	// Objeto contendo os nomes das imagens
+	imagens = {
+		espaco:   'fundo-espaco.png', 
+		estrelas: 'fundo-estrelas.png', 
+		nuvens:   'fundo-nuvens.png', 
+		nave:     'nave-spritesheet.png', 
+		ovni:     'ovni.png',
+		explosao: 'explosao.png'
+	};
          
-         // Carregar todas
-         for (var i in imagens) {
-            var img = new Image();
-            img.src = 'img/' + imagens[i];
-            img.onload = carregando;
-            totalImagens++;
-            
-            // Substituir o nome pela imagem
-            imagens[i] = img;
-         }
-      }
+    // Carregar todas
+	for (var i in imagens) {
+		var img = new Image();
+		img.src = 'img/' + imagens[i];
+		img.onload = carregando;
+		totalImagens++;
+		// Substituir o nome pela imagem
+		imagens[i] = img;
+	}
+  }
       
-      function carregando() {
-         context.save();
+   function carregando() {
+        context.save();
          
          // Fundo 
          context.drawImage(imagens.espaco, 0, 0, canvas.width,
@@ -61,9 +61,9 @@
             iniciarObjetos();
             mostrarLinkJogar();
          }
-      }
+    }
       
-      function iniciarObjetos() {
+  function iniciarObjetos() {
          // Objetos principais
          animacao = new Animacao(context);
          teclado = new Teclado(document);

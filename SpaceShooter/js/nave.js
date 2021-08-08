@@ -12,6 +12,7 @@ function Nave(context, teclado, imagem, imgExplosao) {
    this.acabaramVidas = null;
    this.vidasExtras = 3;
 }
+
 Nave.prototype = {
    atualizar: function() {
       var incremento = 

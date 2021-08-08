@@ -3,6 +3,7 @@ function Colisor() {
    this.aoColidir = null;
    this.spritesExcluir = [];
 }
+
 Colisor.prototype = {
    novoSprite: function(sprite) {
       this.sprites.push(sprite);

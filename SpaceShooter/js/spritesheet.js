@@ -7,13 +7,15 @@ function Spritesheet(context, imagem, linhas, colunas) {
    this.linha = 0; 
    this.coluna = 0; 
    this.fimDoCilo = null;
-} 
+}
+ 
 Spritesheet.prototype = { 
    proximoQuadro: function() {
-      var agora = new Date().getTime(); 
 
-      // Se ainda não tem último tempo medido 
-      if (! this.ultimoTempo) this.ultimoTempo = agora; 
+	var agora = new Date().getTime(); 
+
+     // Se ainda não tem último tempo medido 
+     if (! this.ultimoTempo) this.ultimoTempo = agora; 
 
       // Já é hora de mudar de coluna? 
       if (agora - this.ultimoTempo < this.intervalo) return;
@@ -31,6 +33,7 @@ Spritesheet.prototype = {
       // Guardar hora da última mudança
       this.ultimoTempo = agora;
    },
+
    desenhar: function(x, y) {
       var largura = this.imagem.width / this.numColunas; 
       var altura = this.imagem.height / this.numLinhas; 

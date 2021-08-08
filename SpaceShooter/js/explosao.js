@@ -3,6 +3,7 @@ SOM_EXPLOSAO.src = 'snd/explosao.mp3';
 SOM_EXPLOSAO.volume = 0.4;
 SOM_EXPLOSAO.load();
 
+
 function Explosao(context, imagem, x, y) {
    this.context = context;
    this.imagem = imagem;

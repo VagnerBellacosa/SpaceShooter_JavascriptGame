@@ -1,4 +1,5 @@
 // Códigos de teclas - aqui vão todos os que forem necessários
+
 var SETA_ESQUERDA = 37;
 var SETA_ACIMA = 38;
 var SETA_DIREITA = 39;
@@ -37,6 +38,7 @@ function Teclado(elemento) {
       teclado.disparadas[evento.keyCode] = false;
    });
 }
+
 Teclado.prototype = {
    pressionada: function(tecla) {
       return this.pressionadas[tecla];

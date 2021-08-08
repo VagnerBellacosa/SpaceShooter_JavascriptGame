@@ -6,6 +6,7 @@ function Ovni(context, imagem, imgExplosao) {
    this.velocidade = 0;
    this.imgExplosao = imgExplosao;
 }
+
 Ovni.prototype = {
    atualizar: function() {
       this.y += 
